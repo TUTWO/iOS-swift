@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Dynidonghua" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcF-p8-PLc">
+                                <rect key="frame" x="10" y="630" width="30" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LW1-Dz-hhF">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Add"/>
+                                        <connections>
+                                            <action selector="addview:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgX-FT-JgD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OZR-VD-9Vr">
+                                <rect key="frame" x="0.0" y="14" width="375" height="608"/>
+                                <color key="backgroundColor" red="1" green="0.98350420757694934" blue="0.77961965738229577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWI-AH-m3K">
+                                <rect key="frame" x="302" y="630" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BsY-os-IlU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzT-JN-aYN">
+                                <rect key="frame" x="250" y="630" width="36" height="30"/>
+                                <state key="normal" title="Right"/>
+                                <connections>
+                                    <action selector="addview:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zBF-CC-sDb"/>
+                                    <action selector="right:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eiH-ec-8ah"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yr7-5q-p2Z">
+                                <rect key="frame" x="120" y="630" width="39" height="30"/>
+                                <state key="normal" title="Down"/>
+                                <connections>
+                                    <action selector="addview:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8LS-BY-1dc"/>
+                                    <action selector="down:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5In-NY-qPH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Arx-EO-2ME">
+                                <rect key="frame" x="63" y="630" width="30" height="30"/>
+                                <state key="normal" title="Up"/>
+                                <connections>
+                                    <action selector="addview:" destination="BYZ-38-t0r" eventType="touchUpInside" id="koS-zy-Czw"/>
+                                    <action selector="up:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7L6-UW-Wo9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pt1-lL-ziF">
+                                <rect key="frame" x="189" y="630" width="30" height="30"/>
+                                <state key="normal" title="Left"/>
+                                <connections>
+                                    <action selector="addview:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P3F-8U-s5g"/>
+                                    <action selector="left:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8KH-Ab-I6q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OZR-VD-9Vr" secondAttribute="trailing" id="1VJ-Md-bbz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kcF-p8-PLc" secondAttribute="bottom" constant="7" id="4ox-V8-Dqp"/>
+                            <constraint firstItem="pt1-lL-ziF" firstAttribute="baseline" secondItem="xzT-JN-aYN" secondAttribute="baseline" id="7s0-xG-ThJ"/>
+                            <constraint firstItem="OZR-VD-9Vr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I2j-2V-A20"/>
+                            <constraint firstItem="Yr7-5q-p2Z" firstAttribute="leading" secondItem="Arx-EO-2ME" secondAttribute="trailing" constant="27" id="K8I-qm-yAH"/>
+                            <constraint firstItem="Arx-EO-2ME" firstAttribute="baseline" secondItem="Yr7-5q-p2Z" secondAttribute="baseline" id="Kkr-5o-4eP"/>
+                            <constraint firstItem="Arx-EO-2ME" firstAttribute="leading" secondItem="kcF-p8-PLc" secondAttribute="trailing" constant="23" id="Owh-B6-cHr"/>
+                            <constraint firstItem="pt1-lL-ziF" firstAttribute="leading" secondItem="Yr7-5q-p2Z" secondAttribute="trailing" constant="30" id="YQd-NG-3GA"/>
+                            <constraint firstItem="kcF-p8-PLc" firstAttribute="top" secondItem="OZR-VD-9Vr" secondAttribute="bottom" constant="8" symbolic="YES" id="b9f-e4-hai"/>
+                            <constraint firstItem="FWI-AH-m3K" firstAttribute="leading" secondItem="xzT-JN-aYN" secondAttribute="trailing" constant="16" id="eQ7-hm-nxd"/>
+                            <constraint firstItem="Yr7-5q-p2Z" firstAttribute="baseline" secondItem="pt1-lL-ziF" secondAttribute="baseline" id="hzt-0c-ZkN"/>
+                            <constraint firstItem="kcF-p8-PLc" firstAttribute="top" secondItem="Arx-EO-2ME" secondAttribute="top" id="lZi-vF-Xcd"/>
+                            <constraint firstItem="xzT-JN-aYN" firstAttribute="baseline" secondItem="FWI-AH-m3K" secondAttribute="baseline" id="pvr-b4-O6X"/>
+                            <constraint firstItem="OZR-VD-9Vr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-6" id="qm7-aU-Qj9"/>
+                            <constraint firstItem="kcF-p8-PLc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="sqB-kn-xw2"/>
+                            <constraint firstItem="xzT-JN-aYN" firstAttribute="leading" secondItem="pt1-lL-ziF" secondAttribute="trailing" constant="31" id="tuG-TY-kYA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backview" destination="OZR-VD-9Vr" id="GeK-i3-dMF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77.599999999999994" y="-160.56971514242881"/>
+        </scene>
+    </scenes>
+</document>
